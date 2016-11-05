@@ -1,0 +1,103 @@
+package whodonedidit.gui;
+
+import javax.swing.JLayeredPane;
+
+/**
+ *
+ * @author Tyler Wong
+ */
+public class SuperSleuthResponsePanel extends javax.swing.JPanel
+{
+    private MainFrame frame;
+    private JLayeredPane layerPane;
+    private String[] cardNames;
+    private String userName;
+    
+    /**
+     * Creates new form SuperSleuthResponsePanel
+     */
+    public SuperSleuthResponsePanel(MainFrame frame, JLayeredPane layerPane)
+    {
+        this.frame = frame;
+        this.layerPane = layerPane;
+        initComponents();
+    }
+    
+    public void setCardNames(String[] names)
+    {
+        this.cardNames = names;
+    }
+    
+    public void setUserName(String name)
+    {
+        this.userName = name;
+    }
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents()
+    {
+
+        titleLabel = new javax.swing.JLabel();
+        subTitleLabel = new javax.swing.JLabel();
+        cardPanel = new javax.swing.JPanel();
+
+        setBackground(new java.awt.Color(255, 255, 255));
+        setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        setBounds(new java.awt.Rectangle(0, 0, 600, 350));
+        setMaximumSize(new java.awt.Dimension(600, 350));
+
+        titleLabel.setBackground(new java.awt.Color(255, 255, 255));
+        titleLabel.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
+        titleLabel.setText("Computer 3 Played Super Sleuth!");
+
+        subTitleLabel.setBackground(new java.awt.Color(255, 255, 255));
+        subTitleLabel.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        subTitleLabel.setText("Pick a card to show to them.");
+
+        org.jdesktop.layout.GroupLayout cardPanelLayout = new org.jdesktop.layout.GroupLayout(cardPanel);
+        cardPanel.setLayout(cardPanelLayout);
+        cardPanelLayout.setHorizontalGroup(
+            cardPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 527, Short.MAX_VALUE)
+        );
+        cardPanelLayout.setVerticalGroup(
+            cardPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 248, Short.MAX_VALUE)
+        );
+
+        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(layout.createSequentialGroup()
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(layout.createSequentialGroup()
+                        .add(123, 123, 123)
+                        .add(titleLabel))
+                    .add(layout.createSequentialGroup()
+                        .add(209, 209, 209)
+                        .add(subTitleLabel))
+                    .add(layout.createSequentialGroup()
+                        .add(33, 33, 33)
+                        .add(cardPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(layout.createSequentialGroup()
+                .add(19, 19, 19)
+                .add(titleLabel)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(subTitleLabel)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(cardPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel cardPanel;
+    private javax.swing.JLabel subTitleLabel;
+    private javax.swing.JLabel titleLabel;
+    // End of variables declaration//GEN-END:variables
+}
