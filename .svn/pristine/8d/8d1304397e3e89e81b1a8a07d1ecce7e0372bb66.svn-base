@@ -1,5 +1,0 @@
-<HTML>
-<BODY>
-Our design is split between two applications, a Client application and a Server Application, though both applications share almost all the architecture excluding the GUI to support offline play. We use the Client-Server model to communicate between our applications over a network, but also allow a Client to operate independently of a Server application since it has access to much of the same architecture. Our Server application has no user interface, and simply waits for Clients to connect and then runs the game, sending status updates and receiving input from its Clients. The Client application utilizes the Model-View-Controller design pattern to connect our user interface and game logic, allowing us to easily modify or replace the user interface in the future and to test more easily.
-</BODY>
-</HTML>
